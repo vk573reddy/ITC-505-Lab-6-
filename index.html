@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Holy Grail Layout</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>JavaScript Problem Solver</h2>
+            <p>Enter numbers separated by commas to sort them:</p>
+            <input type="text" id="numberInput" placeholder="e.g. 5,3,8,1">
+            <button id="sortButton">Sort Numbers</button>
+            <h3>Sorted Numbers:</h3>
+            <p id="sortedOutput"></p>
+        </main>
+        <aside class="advertisement">
+            <a href="https://www.amazon.com/Kashmir-Leather-Cricket-Exclusive-Protection/dp/B08C5GKF2W/ref=sr_1_6?crid=1DXLTZH9OBHKA&dib=eyJ2IjoiMSJ9.kNj48scS9XaS54J0fhVeN_apy72_HaBlv4Fu_ayp83OJy-B9vLP3tLN2DClvw62HxoVAC_iaF-hLGWBMIDz9PTBc6R4-XyF2hviWJe60MRaHBgHd2eQmCguW_8poSm1V3dZ7ZAwSVBnRnFKYXb-I8HCGFokJ5JiRVBXearlyvc9x4IetavP7Xb9JgzlcCzPTeQPyPCkBSn5HbctmjnvoV0ORGu49nHlHwCEHDoYjeTHBFMmROjmU_YSNWfXpmBEVUzSLvS6YL6ol5HtAxT8ktqTc0CDnIQ38acwWKTETdm-rtgRBqgvB0-qtIWzF9DTd86NASp9OvOrujeszHRLNQ9t2WirxGUjDSI3caWg2V7JW-nr91rmqXVTpoTDlzdqIdGy_D3sAEWYDJ-7C-W3YJ6ni4dSE8dtRY9zO6E2ry0NkewYz6Vb8aBMGOLCY6Tlo.Li_CVnSEOOV87I9MaH2o-C1jMcMbxDU5NGemlzeBjnM&dib_tag=se&keywords=cricket+bat&qid=1743462427&sprefix=cricket+bat%2Caps%2C145&sr=8-6" target="_blank">
+                <img src="image.jpg" alt="Advertisement" class="ad-image">
+            </a>
+        </aside>
+    </div>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <div class="addendum">
+            <h3>Addendum</h3>
+            <p>
+                The problem I solved with my JavaScript was to sort a list of numbers entered by the user. The user can input numbers separated by commas, and upon clicking the "Sort Numbers" button, the numbers are sorted in ascending order and displayed on the page.
+            </p>
+            <p>
+                To solve this problem, I used the JavaScript `split()` method to convert the input string into an array of numbers. I then used the `map()` function to convert the string representations of the numbers into actual integers. Finally, I applied the `sort()` method to sort the array in ascending order and displayed the result on the webpage.
+            </p>
+            <p>
+                One difficulty I encountered was ensuring that the input was properly formatted and that non-numeric values were handled gracefully. To address this, I used the `filter()` method to remove any non-numeric values from the array before sorting.
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
